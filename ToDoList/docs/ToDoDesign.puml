@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+abstract class Application{
+}
+
+class ToDoTitle extends Application{
+    Title: String
+}
+
+class ToDoListCounter extends Application{
+    amount: int
+}
+
+class ToDoDescription extends Application{
+    Description: String
+}
+
+class ToDoGoal extends Application{
+    expDate: Date
+}
+
+class EditToDo extends Application{
+    button: add
+    button: remove
+    button: edit
+}
+
+class ToDoDisplay extends Application{
+    complete: String
+    incomplete: String
+    existing: String
+}
+
+class ToDoSave extends Application{
+    button: save
+}
+
+@enduml
