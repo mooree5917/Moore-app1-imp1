@@ -4,6 +4,7 @@ Copyright 2021 Eric Moore
  */
 package baseline;
 
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -13,9 +14,10 @@ public class ToDoListApplication extends Application {
     //might need a method or short section of code to ask the user if they would like to load a list.
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Application.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ToDoListApplication.fxml"));
 
         Scene scene = new Scene(root);
+        stage.setTitle("To Do List Application");
         /*
         scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
 
